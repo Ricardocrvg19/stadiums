@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+    font-size: 12px;
+}
+
+header {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+header a {
+    color: #eee;
+    font-weight: 400;
+    margin-right: 40px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+}
+
+.container .list .list-itens {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.container .list .list-itens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.container .list .list-itens .content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    padding-right: 50%;
+    width: 80%;
+    color: #eee;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: 30px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+    transition: .8s;
+}
+
+button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+}
+
+button:nth-child(2):hover {
+    background-color: #eee;
+    border: none;
+    color: #000;
+    transition: .8s;
+}
+
+.thumb {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    gap: 15px;
+}
+
+.thumb-itens {
+    position: relative;
+    width: 117px;
+    height: 130px;
+    z-index: 2;
+}
+
+.thumb .thumb-itens img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.content-two {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.thumb-itens img:hover {
+    cursor: pointer;
+    transition: .5s;
+    transform: translatey(-12px);
+}
+
+.bane {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    left: 150px;
+    bottom: 130px;
+}
+
+#back {
+    border-radius: 10px;
+    width: 65px;
+    height: 40px;
+    background-color: #eee4;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#next {
+    border-radius: 10px;
+    border: #000;
+    width: 65px;
+    height: 40px;
+    background-color: #eee4;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#back:hover {
+    transition: .6s;
+    background-color: #000;
+    border: #000;
+    color: #eee4;
+}
+
+#next:hover {
+    transition: .6s;
+    background-color: #000;
+    color: #eee4;
+}
+
+/* Movimento da thumb */
+
+.container.next .thumb {
+    animation: nextMove .8s linear 1 forwards;
+}
+
+@keyframes nextMove {
+    from {
+        transform: translateX(50px);
+    }
+}
+
+/* Movimento Ultima thumb */
+
+.container.next .thumb-itens:nth-last-child(1) {
+    animation: moveToLast .8s linear 1 forwards;
+}
+
+@keyframes moveToLast {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* Frases */
+
+
+.container .list .list-itens:nth-last-child(1) .content h1,
+.container .list .list-itens:nth-last-child(1) .content h6,
+.container .list .list-itens:nth-last-child(1) .content .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showMainText .8s .2s linear 1 forwards;
+}
+
+@keyframes showMainText {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.container .list .list-itens:nth-last-child(1) .content h1 {
+    animation-delay: .8s;
+}
+
+.container .list .list-itens:nth-last-child(1) .content h6 {
+    animation-delay: 1.2s;
+}
+
+.container .list .list-itens:nth-last-child(1) .content .buttons {
+    animation-delay: 2s;
+}
+
+/* Movimento Imgprincipal next */
+
+.container.next .list-itens:nth-last-child(1) img {
+    position: absolute;
+    width: 117px;
+    height: 130px;
+    bottom: 50px;
+    left: 50%;
+    animation: showMainImg .6s linear 1 forwards;
+
+}
+
+@keyframes showMainImg {
+    to {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/* Movimento Imgprincipal back */
+
+
+.container.back .list-itens:nth-child(1) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: kdkdMainImg .8s linear 1 forwards;
+    z-index: 2;
+}
+
+@keyframes kdkdMainImg {
+    to {
+       
+        width: 106px;
+        height: 130px;
+        border-radius: 15px;
+        bottom: 70px;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width:730px){
+
+     #response-none{
+        display: none;
+    }
+
+    #left-resp{
+        display: none;
+    }
+
+    .bane {
+        position: absolute;
+        display: flex;
+        gap: 10px;
+        left: 70px;
+        
+    }
+
+    h6 {
+        width: 300px;
+        line-height: 1.2;
+    }
+
+    .thumb {
+        position: absolute;
+        bottom: 130px;
+        display: flex;
+        gap: 15px;
+    }
+    
+    .thumb-itens {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        z-index: 2;
+    }
+
+    .container.back .list-itens:nth-child(1) img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: kdkdMainImg .8s linear 1 forwards;
+        z-index: 2;
+    }
+    
+    @keyframes kdkdMainImg {
+        to {
+           
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            bottom: 150px;
+            left: 50%;
+        }
+    }
+
+    .content-two {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-size: 10px;
+    }
+   
+    
+}

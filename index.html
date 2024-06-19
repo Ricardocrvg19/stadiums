@@ -1,0 +1,165 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Stadiums</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://www.linkedin.com/in/ricardo-martins-r2730/" target=”_blank”>Linkedin of Developer</a>
+            <a href="https://github.com/Ricardocrvg19" target=”_blank”>GitHub of Developer</a>
+            <a id="response-none" href="https://web.whatsapp.com/" target=”_blank”>Contact of Developer</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="list">
+            <div class="list-itens">
+                <img src="./assets/sao-januario-image.webp" alt="sao-januario-image">
+                <div class="content">
+                    <h1>São Januário</h1>
+                    <h6>The Vasco da Gama Stadium, better known as São Januário, is a football stadium belonging to
+                        to the Club de Regatas Vasco da Gama, located in the neighborhood of the same name, Rio de
+                        Janeiro. It was opened in
+                        April 21, 1927 (97 years old), being to this day the largest private stadium in the state of Rio
+                        de Janeiro
+                        January.</h6>
+                    <div class="buttons">
+                        <button onclick="capacity('sj')">Capacity</button>
+                        <button id="left-resp" onclick="curiosity('sj')">Curiosities</button>
+                    </div>
+                    <br>
+                        <h1>  <span id="sj"></span></h1>
+                        <h3> <span id="first-curiosity"> </span> </h3>
+                </div>
+            </div>
+
+            <div class="list-itens">
+                <img src="./assets/la-bombonera-image.jpg" alt="la-bombonera-image">
+                <div class="content">
+                    <h1>La Bombonera</h1>
+                    <h6>The La Bombonera stadium was inaugurated on May 25, 1940. Located in the famous Buenos Aires
+                        neighborhood of La Boca, the colorful Alberto J. Armando Stadium, better known as “La
+                        Bombonera”, is the home stadium of Club Atlético Boca Juniors.</h6>
+                    <div class="buttons">
+                        <button onclick="capacity('lb')">Capacity</button>
+                        <button id="left-resp" onclick="curiosity('lb')">Curiosities</button>
+                    </div>
+                    <br>
+                    <h1> <span id="lb"></span></h1>
+                    <h3> <span id="second-curiosity"> </span> </h3>
+                </div>
+            </div>
+
+            <div class="list-itens">
+                <img src="./assets/centenario-image.jpg" alt="centenario-image">
+                <div class="content">
+                    <h1>Centenario</h1>
+                    <h6>The stadium was built to host games during the first Football World Cup in 1930. It is where the
+                        Uruguayan Football Team normally plays</h6>
+                    <div class="buttons">
+                        <button onclick="capacity('cente')">Capacity</button>
+                        <button id="left-resp" onclick="curiosity('cente')">Curiosities</button>
+                    </div>
+                    <br>
+                    <h1> <span id="cente"></span></h1>
+                    <h3> <span id="third-curiosity"></span> </h3>
+                </div>
+            </div>
+
+            <div class="list-itens">
+                <img src="./assets/monumental-de-nunez-image.jpg" alt="monumental-de-nunez-image">
+                <div class="content">
+                    <h1>Monumental de Nunez</h1>
+                    <h6>Located in the upscale neighborhood of Belgrano, more precisely at the intersection of Figueroa
+                        Alcorta and Udaondo avenues, the Monumental de Nuñez stadium has been the stage for major and
+                        classic football matches.</h6>
+                    <div class="buttons">
+                        <button onclick="capacity('mntl')">Capacity</button>
+                        <button id="left-resp" onclick="curiosity('mntl')">Curiosities</button>
+                    </div>
+                    <br>
+                    <h1> <span id="mntl"></span></h1>
+                    <h3> <span id="fourth-curiosity"></span> </h3>
+                </div>
+            </div>
+
+            <div class="list-itens">
+                <img src="./assets/maracana-image.webp" alt="maracana-image">
+                <div class="content">
+                    <h1>Maracanã</h1>
+                    <h6>Maracanã, also known as Estádio Jornalista Mário Filho, located in Rio de Janeiro, has its
+                        history directly linked to the 1950 World Cup, an event that was hosted by Brazil. Vasco da Gama
+                        was the first team to become champion at the Maracana Stadium.</h6>
+                    <div class="buttons">
+                        <button onclick="capacity('mrc')">Capacity</button>
+                        <button id="left-resp" onclick="curiosity('mrc')">Curiosities</button>
+                    </div>
+                    <br>
+                    <h1> <span id="mrc"></span></h1>
+                    <h3> <span id="fifth-curiosity"></span> </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumb">
+            <div class="thumb-itens">
+                <img src="./assets/sao-januario-image.webp" alt="sao-januario-image">
+                <div class="content-two">
+                    <h3>Colina Histórica</h3>
+                    <h5>Vasco</h5>
+                </div>
+            </div>
+
+            <div class="thumb-itens">
+                <img src="./assets/la-bombonera-image.jpg" alt="la-bombonera-image">
+                <div class="content-two">
+                    <h3>Bombonera</h3>
+                    <h5>Boca Jrs</h5>
+                </div>
+            </div>
+
+            <div class="thumb-itens">
+                <img src="./assets/centenario-image.jpg" alt="centenario-image">
+                <div class="content-two">
+                    <h3>Centenario</h3>
+                    <h5>Seleção Uruguaia de Futebol</h5>
+                </div>
+            </div>
+
+            <div class="thumb-itens">
+                <img src="./assets/monumental-de-nunez-image.jpg" alt="monumental-de-nunez-image">
+                <div class="content-two">
+                    <h3>Monumental</h3>
+                    <h5>River Plate</h5>
+                </div>
+            </div>
+
+            <div class="thumb-itens">
+                <img src="./assets/maracana-image.webp" alt="maracana-image">
+                <div class="content-two">
+                    <h3>Maraca</h3>
+                    <h5>Government of Rio de Janeiro</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="bane">
+            <button id="back" onclick="randomButton('back')"> < </button>
+            <button id="next" onclick="randomButton('next')"> > </button>
+        </div>
+    </main>
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
