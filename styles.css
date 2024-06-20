@@ -273,7 +273,7 @@ button:nth-child(2):hover {
 
 @keyframes kdkdMainImg {
     to {
-       
+
         width: 106px;
         height: 130px;
         border-radius: 15px;
@@ -284,11 +284,21 @@ button:nth-child(2):hover {
 
 @media screen and (max-width:730px){
 
-     #response-none{
+    header a {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 30px;
+        white-space: nowrap;
+    }
+
+    #response-none {
         display: none;
     }
 
-    #left-resp{
+    #left-resp {
         display: none;
     }
 
@@ -296,8 +306,9 @@ button:nth-child(2):hover {
         position: absolute;
         display: flex;
         gap: 10px;
-        left: 70px;
-        
+        left: 10%;
+        border-radius: 10px;
+        bottom: 130px;
     }
 
     h6 {
@@ -311,7 +322,7 @@ button:nth-child(2):hover {
         display: flex;
         gap: 15px;
     }
-    
+
     .thumb-itens {
         position: relative;
         width: 90px;
@@ -323,18 +334,18 @@ button:nth-child(2):hover {
         position: absolute;
         bottom: 0;
         left: 0;
-        animation: kdkdMainImg .8s linear 1 forwards;
+        animation: kdkdMainImg .9s linear 1 forwards;
         z-index: 2;
     }
-    
+
     @keyframes kdkdMainImg {
         to {
-           
-            width: 80px;
-            height: 80px;
-            border-radius: 15px;
+
+            width: 0;
+            height: 0;
+            border-radius: 55px;
             bottom: 150px;
-            left: 50%;
+            left: 65%;
         }
     }
 
@@ -344,6 +355,6 @@ button:nth-child(2):hover {
         left: 10px;
         font-size: 10px;
     }
-   
-    
+
+
 }
