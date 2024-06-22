@@ -294,6 +294,21 @@ button:nth-child(2):hover {
         white-space: nowrap;
     }
 
+    #sj{
+        font-size: 100px;
+    }
+    #lb {
+        font-size: 100px;
+    }
+    #cente{
+        font-size: 100px;
+    }
+    #mntl{
+        font-size: 100px;
+    }
+    #mrc{
+        font-size: 100px;
+    }
     #response-none {
         display: none;
     }
@@ -306,9 +321,9 @@ button:nth-child(2):hover {
         position: absolute;
         display: flex;
         gap: 10px;
-        left: 10%;
+        left: 30%;
         border-radius: 10px;
-        bottom: 130px;
+        bottom: 50px;
     }
 
     h6 {
@@ -318,15 +333,16 @@ button:nth-child(2):hover {
 
     .thumb {
         position: absolute;
-        bottom: 130px;
+        bottom: 150px;
+        left: 1%;
         display: flex;
         gap: 15px;
     }
 
     .thumb-itens {
         position: relative;
-        width: 90px;
-        height: 90px;
+        width: 68px;
+        height: 100px;
         z-index: 2;
     }
 
@@ -344,15 +360,13 @@ button:nth-child(2):hover {
             width: 0;
             height: 0;
             border-radius: 55px;
-            bottom: 150px;
-            left: 65%;
+            bottom: 160px;
+            left: 1%;
         }
     }
 
     .content-two {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        font-size: 10px;
+       font-size: 7px;
+        font-weight: bold;
     }
 }
