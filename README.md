@@ -5,7 +5,7 @@
 <a href="#technologies">  Technologies Applied </a> 
 <br>
 <br>
-<a href="https://sastadiums.netlify.app/"> See the Project HERE  :arrow_forward: <a/>
+<a href="https://sastadiums.netlify.app/" target="_blank">See the Project HERE :arrow_forward:</a>
 <br>
 <h1> :soccer: Main South America Stadiums :soccer: </h1>
 <br>
